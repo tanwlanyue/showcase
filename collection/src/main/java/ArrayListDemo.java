@@ -16,5 +16,9 @@ public class ArrayListDemo {
         if (list.contains(item)) {
             System.out.println("exist apple");
         }
+        // recommend
+        for (Item i : list) {
+            System.out.println(i);
+        }
     }
 }

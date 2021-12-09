@@ -1,3 +1,5 @@
+import domain.Item;
+
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.ListIterator;
@@ -44,6 +46,13 @@ public class LinkedListDemo {
             System.out.println(listIterator.next());
             listIterator.remove();
             listIterator.add("5");
+        }
+
+        // recommend
+        LinkedList<Item> items = new LinkedList<Item>();
+        Iterator<Item> iterator1 = items.iterator();
+        while (iterator1.hasNext()) {
+            System.out.println(iterator1.next());
         }
     }
 }
